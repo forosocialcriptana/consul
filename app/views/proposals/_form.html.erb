@@ -9,7 +9,7 @@
       <div class="small-12 column">
         <%= translations_form.text_field :title,
               maxlength: Proposal.title_max_length,
-              data: suggest_data(suggest_proposals_path) %>
+              data: suggest_data(@proposal, suggest_proposals_path) %>
       </div>
       <div class="js-suggest" data-locale="<%= translations_form.locale %>"></div>
 
